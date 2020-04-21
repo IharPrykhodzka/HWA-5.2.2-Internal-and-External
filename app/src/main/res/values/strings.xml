@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HWA 5.2.1 Registration</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="registrationBtn">REGISTRATION</string>
+    <string name="checkbox">Сохранение и чтение данных в внешнем файле</string>
+</resources>
