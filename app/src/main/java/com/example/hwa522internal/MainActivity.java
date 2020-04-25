@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mLogin = findViewById(R.id.login);
+        mPassword = findViewById(R.id.password);
+        btnLogin = findViewById(R.id.btnLogin);
+        btnRegistration = findViewById(R.id.btnRegistration);
         checkBox = findViewById(R.id.btnCheckbox);
 
         isChecked = checkBox.isChecked();
@@ -87,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void mRegLogInternal() {
-        mLogin = findViewById(R.id.login);
-        mPassword = findViewById(R.id.password);
-        btnLogin = findViewById(R.id.btnLogin);
-        btnRegistration = findViewById(R.id.btnRegistration);
 
         btnRegistration.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -338,10 +338,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void mRegLogExternal() {
-        mLogin = findViewById(R.id.login);
-        mPassword = findViewById(R.id.password);
-        btnLogin = findViewById(R.id.btnLogin);
-        btnRegistration = findViewById(R.id.btnRegistration);
 
         int permissionStatus = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         if (permissionStatus != PackageManager.PERMISSION_GRANTED) {
